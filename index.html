@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Wealthtara Investments Pvt. Ltd</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#0b1220;
+      color:white;
+    }
+
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      padding:15px 8%;          /* slightly reduced padding */
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(0,0,0,0.7); /* darker for contrast */
+      backdrop-filter:blur(10px);
+      z-index:1000;
+      min-height:90px;          /* ensures enough vertical space for logo */
+    }
+
+    .logo-container{
+      display:flex;
+      align-items:center;
+      gap:15px;
+    }
+
+    .logo-container img{
+      height:60px;              /* balanced size */
+      width:auto;
+      max-width:120px;          /* prevents stretching */
+      object-fit:contain;       /* keeps full logo visible */
+    }
+
+    .logo{
+      font-size:26px;           /* slightly smaller to align neatly with logo */
+      color:#fff;
+      font-family:'Playfair Display', serif;
+      font-weight:700;
+      line-height:1;            /* keeps text vertically centered */
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:30px;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:#E0E0E0;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#D4AF37;
+    }
+
+    .hero{
+      height:100vh;
+      background:
+      linear-gradient(rgba(5,10,25,0.75), rgba(5,10,25,0.8)),
+      url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      padding:0 8%;
+    }
+
+    .hero-content{
+      max-width:700px;
+    }
+
+    .hero h2{
+      font-size:70px;
+      font-family:'Playfair Display', serif;
+      color:#FFFFFF;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:20px;
+      color:#E0E0E0;
+      line-height:1.8;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 35px;
+      background:#D4AF37;
+      color:#0A1F44;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    .about{
+      padding:100px 8% 50px 8%;
+      background:#111827;
+      text-align:center;
+    }
+
+    .about h2{
+      font-size:45px;
+      margin-bottom:25px;
+      font-family:'Playfair Display', serif;
+      color:#FFFFFF;
+    }
+
+    .about p{
+      max-width:900px;
+      margin:auto;
+      line-height:2;
+      color:#E0E0E0;
+      font-size:18px;
+    }
+
+    .directors{
+      padding:50px 8% 100px 8%;
+      background:#111827;
+      text-align:center;
+    }
+
+    .directors h2{
+      font-size:45px;
+      margin-bottom:40px;
+      font-family:'Playfair Display', serif;
+      color:#FFFFFF;
+    }
+
+    .director-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+      justify-items:center;
+    }
+
+    .director-box{
+      background:#0b1220;
+      padding:20px;
+      border-radius:20px;
+      text-align:center;
+      width:250px;
+    }
+
+    .director-box img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      border-radius:15px;
+      margin-bottom:15px;
+    }
+
+    .director-box h3{
+      color:#FFFFFF;
+      font-size:20px;
+      margin-top:10px;
+    }
+
+    footer{
+      background:#050b16;
+      padding:50px 8%;
+      text-align:center;
+    }
+
+    footer p{
+      color:#E0E0E0;
+      line-height:2;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo-container">
+      <!-- Replace logo.png with your actual image path -->
+      <img src="C:/Users/Tanvi kunjir/OneDrive/Desktop/WEALTHTARA/logo.png" alt="Wealthtara Logo">
+      <div class="logo">Wealthtara Investments Pvt. Ltd</div>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="investments.html">Investments</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Building Wealth Through Smart Investments</h2>
+      <p>Trusted investment solutions designed to create wealth for Future.</p>
+      <a href="contact.html" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      At Wealthtara Investment Pvt Ltd, we empower Investors collaborative thinking. By closing the loop on investment management and using the latest methodology, we help Investors and ourselves to grow and expand portfolio wealth.
+    </p>
+  </section>
+
+  <section class="directors">
+    <h2>Our Director's</h2>
+    <div class="director-grid">
+      <div class="director-box">
+        <img src="C:/Users/Tanvi kunjir/OneDrive/Desktop/WEALTHTARA/papa.jpeg" alt="Mangesh Kunjir">
+        <h3>Mangesh Kunjir</h3>
+      </div>
+      <div class="director-box">
+        <img src="C:/Users/Tanvi kunjir/OneDrive/Desktop/WEALTHTARA/mama.png" alt="Chhaya Kunjir">
+        <h3>Chhaya Kunjir</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Phone       : +91 95272 10312</p>
+    <p>Whatsapp No : +91 95272 10312</p>    
+    <p>Pune, Maharashtra, India</p>
+  </footer>
+
+</body>
+</html>
